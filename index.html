@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to give peace to people</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+
+   </head>
+<body>
+     <section class="header"> 
+             <div class="text-box">
+                <h1>Quotes of Bhagavad Gita</h1>
+                 <h2><span id="text"></h2>  
+ 
+             </div>
+
+             <img src="Krishna2.png" alt="" class="img"> 
+
+
+            <div class="center">
+                 
+               <div class="outer one">
+                   <button>Click Me!!</button>
+                   <span></span>
+                   <span></span>
+               </div>
+                
+          </div>
+
+        
+
+        <div class="images">
+           <img src="img7.jpg" alt="" id="god">
+        </div>
+
+     </section>
+
+      
+      
+   
+     
+<script>
+           
+    var typed=new Typed("#text",{
+    strings:["कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।","मा कर्मफलहेतुर्भुर्मा ते संगोऽस्त्वकर्मणि ॥"],
+    typeSpeed: 80,
+    backSpeed: 70,
+     loop: true
+    });
+
+     
+
+   window.addEventListener("click", myfunction);
+
+   setInterval(myfunction,100);
+
+    var Audio_1=new Audio("gita.mp3")
+    function myfunction()
+   {
+    this.Audio_1.play();
+    this.Audio_1.volume=0.8;
+     
+   }
+
+
+   window.addEventListener("click", mini);
+
+    setInterval(mini,2000);
+
+    function mini()
+    {
+        let pics=[
+            "img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.pg.jpg","img6.jpg","img7.jpg","img8.jpg"
+        ];
+
+        let imglen=pics.length;
+        let random=Math.random();
+        random=random*imglen;
+        random=Math.floor(random);
+        let chosenimg=pics[random];
+        let element=document.getElementById('god');
+        element.src=chosenimg;
+    }
+    
+
+
+
+
+ 
+</script>
+ 
+</body>
+</html>
